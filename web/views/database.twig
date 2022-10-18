@@ -1,0 +1,33 @@
+{% extends "/layout.html" %}
+
+{% block content %}
+<p>Got these rows from the database:</p>
+<table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>No Hp</th>
+            <th>Address</th>
+            <th>Created At</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for n in names %}
+        <tr>
+            <td>{{ n.id }}</td>
+            <td>{{ n.name }}</td>
+            <td>{{ n.email }}</td>
+            <td>{{ n.nohp }}</td>
+            <td>{{ n.address }}</td>
+            <td>{{ n.created_at }}</td>
+            <td>
+              <a href="" class="btn btn-primary"><span class="fa fa-dekstop"></span> View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
