@@ -1,6 +1,6 @@
 {
-  "name": "Building Website mnurhadev",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "name": "heroku-profile",
+  "description": "Build Web Profile with PHP app that makes use of the Silex web framework",
+  "repository": "https://github.com/mnurhads/heroku-profile",
   "addons": []
 }
